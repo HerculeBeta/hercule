@@ -2,7 +2,7 @@
 
 A high-performance, private utility and modification client for Minecraft on Windows.
 
-![Minecraft](https://img.shields.io/badge/Minecraft-v1.21.81.2-green.svg)
+![Minecraft](https://img.shields.io/badge/Minecraft-v1.21.132-green.svg)
 ![Platform](https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011-lightgrey.svg)
 ![Source](https://img.shields.io/badge/Source-Proprietary-red.svg)
 
