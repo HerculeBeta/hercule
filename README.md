@@ -18,6 +18,14 @@ Hercule is a modular native C++ utility client designed specifically for Minecra
 
 ---
 
+## Download
+
+You can download the launcher here:
+
+:contentReference[oaicite:0]{index=0}
+
+---
+
 ## Key Features
 
 - **DirectX Rendering Pipeline**  
@@ -73,22 +81,19 @@ Hercule includes a sandboxed Lua 5.4 interpreter. Users can create custom module
 ```lua
 local CustomFly = {}
 
--- Initialize the module within the client
 module.register("CustomFly", "Basic movement example", "Movement", CustomFly)
 module.addSlider("CustomFly", "Speed", "Velocity multiplier", 0.5, 5.0, 1.5)
 
--- Called when the module is turned off
 function CustomFly.on_disable(self)
     player.setMotion(0, 0, 0)
 end
 
--- Called every game tick (20 ticks per second)
 function CustomFly.on_tick(self)
     local speed = module.get("CustomFly", "Speed")
     local moveForward = client.isKeyDown("w")
-    
+
     if moveForward then
-        local yaw, pitch = player.getRot()
+        local yaw = player.getRot()
         local rad = math.rad(yaw + 90)
         player.setMotion(math.cos(rad) * speed, 0, math.sin(rad) * speed)
     end
