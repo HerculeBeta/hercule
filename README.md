@@ -8,6 +8,16 @@ A high-performance, private utility and modification client for Minecraft on Win
 
 ---
 
+## 🚀 Download
+
+<p align="center">
+  <a href="https://hercule.solisdev.xyz">
+    <img src="https://img.shields.io/badge/DOWNLOAD%20LAUNCHER-HERCULE%20CLIENT-00c853?style=for-the-badge&logo=windows&logoColor=white" alt="Download Hercule Client"/>
+  </a>
+</p>
+
+---
+
 ## Overview
 
 Hercule is a modular native C++ utility client designed specifically for Minecraft on Windows platforms. Engineered to prioritize performance and stability, Hercule offers an extensible workspace featuring over 120 built-in modules, a robust Lua 5.4 scripting engine, and a fully customizable Heads-Up Display (HUD) editor.
@@ -18,27 +28,19 @@ Hercule is a modular native C++ utility client designed specifically for Minecra
 
 ---
 
-## Download
-
-You can download the launcher here:
-
-:contentReference[oaicite:0]{index=0}
-
----
-
 ## Key Features
 
 - **DirectX Rendering Pipeline**  
   Direct hooks into the rendering engine minimize CPU and GPU overhead, preserving stable frame rates during intensive usage.
 
 - **Interactive HUD Editor**  
-  Press <kbd>Right Shift</kbd> to access the layout editor. Supports real-time scaling, snapping, and grouping of visual overlays (e.g., coordinates, radars, armor indicators).
+  Press <kbd>Right Shift</kbd> to access the layout editor. Supports real-time scaling, snapping, and grouping of visual overlays.
 
 - **Lua 5.4 Scripting VM**  
-  Extend the client dynamically. Write, compile, and load custom add-ons instantly without restarting the game or rebuilding the binary.
+  Extend the client dynamically with custom scripts without restarting the game.
 
 - **Developer Console**  
-  Access a fast, searchable in-game command terminal by pressing <kbd>F4</kbd>.
+  Press <kbd>F4</kbd> for a fast in-game command terminal.
 
 ---
 
@@ -46,37 +48,33 @@ You can download the launcher here:
 
 | Category | Description | Key Modules |
 |----------|------------|-------------|
-| **Combat** | Target filtering and optimization | Killaura, Target Mode (Whitelist), TriggerBot, AutoWeapon |
-| **Movement** | Traversing the environment | Flight, Velocity Control, Step, Custom Pathfinders |
-| **Visual** | Spatial awareness and object tracking | 3D BlockESP, StorageESP, Nametags, Rotating Minimap |
-| **World** | Automated block interaction | Scaffold, Nuker, Schematic Printer, Auto-Farming |
-| **Player** | Inventory and state automation | InventoryManager, Auto-Armor, MLG, Auto-Tool |
-| **Misc** | Auxiliary utilities | AI Assistant Integration, Command Terminal, Discord Rich Presence |
+| **Combat** | Target filtering and optimization | Killaura, TriggerBot, AutoWeapon |
+| **Movement** | Traversing the environment | Flight, Velocity Control, Step |
+| **Visual** | Spatial awareness and tracking | BlockESP, StorageESP, Nametags |
+| **World** | Automated block interaction | Scaffold, Nuker, Auto-Farming |
+| **Player** | Inventory automation | Auto-Armor, MLG, Auto-Tool |
+| **Misc** | Utility tools | Command Terminal, Discord RPC |
 
 ---
 
-## Directory Configuration
-
-Upon first execution, the client automatically creates the following directory structure for settings and assets:
+## Directory Structure
 
 ```
 Documents/
 └── Hercule/
     └── Client/
         ├── Assets/
-        │   └── Textures/    # Custom block & item icons (.png)
-        ├── Scripts/         # Custom user-loaded .lua scripts
-        └── default.hercule  # Active settings and layout configurations
+        │   └── Textures/
+        ├── Scripts/
+        └── default.hercule
 ```
 
 ---
 
 ## Lua Scripting API
 
-Hercule includes a sandboxed Lua 5.4 interpreter. Users can create custom modules by placing `.lua` scripts in the Scripts directory.
-
 <details>
-<summary><b>Click to expand a basic Lua script example</b></summary>
+<summary><b>Click to expand Lua example</b></summary>
 
 ```lua
 local CustomFly = {}
@@ -104,12 +102,10 @@ end
 
 ---
 
-## Legal & Disclaimer
+## ⚠️ Disclaimer
 
-> ⚠️ **Warning**
+This software is intended strictly for educational, offline, and private single-player testing purposes.
 
-This software is intended strictly for educational, offline, and private single-player testing purposes. The developers do not condone or encourage cheating on public multiplayer networks.
-
-- **Terms of Use:** Provided "as-is" without warranties. Reverse engineering, cracking, or unauthorized redistribution of the compiled binary is strictly prohibited.  
-- **Account Safety:** Users assume full responsibility for any actions taken using this software. The development team is not liable for bans, suspensions, or restrictions on third-party networks.
-```
+- No responsibility for bans or account actions
+- No redistribution of compiled binaries allowed
+- Use at your own risk
